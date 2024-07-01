@@ -30,7 +30,7 @@ const Page = () => {
       localStorage.setItem("user", JSON.stringify(user.data.user))
       em.current.value = ''
       pass.current.value = ''
-      if(user.hasUserId){
+      if(user.data.hasUserId){
         window.location = "/"
       }
       else{
